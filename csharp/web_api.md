@@ -40,3 +40,13 @@ var result = await response.Content.ReadAsAsync<IEnumerable<BusinessUnit>>();
 
 ## OpenAPI
 [Generate C# client for OpenAPI - Revisited](https://kaylumah.nl/2023/04/14/csharp-client-for-openapi-revistted.html)
+
+
+## Loading settings
+```csharp
+public class SomeSettings
+{
+  public string MyFavoriteName { get; set; }
+}
+Configuration.GetSection("someSettingNode:someSetting").Get<SomeSettings>();
+```
