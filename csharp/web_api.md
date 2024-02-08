@@ -49,4 +49,6 @@ public class SomeSettings
   public string MyFavoriteName { get; set; }
 }
 Configuration.GetSection("someSettingNode:someSetting").Get<SomeSettings>();
+//or
+services.Configure<SomeSettings>(configuration.GetSection("someSettingNode:someSetting"))
 ```
