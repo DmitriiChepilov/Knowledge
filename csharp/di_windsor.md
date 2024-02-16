@@ -36,8 +36,8 @@ public class ThingDecorator : IThing
 }
 
 // register decorator
-var container = new WindsorContainer()
-  .Register(
+var container = new WindsorContainer();
+container.Register(
     Component.For<IThing>().ImplementedBy<ThingDecorator>(),
     Component.For<IThing>().ImplementedBy<ThingOne>()
     );
