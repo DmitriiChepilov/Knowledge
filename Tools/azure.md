@@ -15,10 +15,11 @@ and(succeeded(), eq(variables.Environment, 'Production'))
 
 
 C:\Agents\vsts-agent-win-x64-2.149.2\_work\11
-Name                                                                  
-----                                                                  
-a                                                                     
-b                                                                     
-Nuget                                                                 
-s                                                                     
-TestResults 
+
+|Name        |
+|------------|
+|a           |
+|b           |
+|Nuget       |
+|s           |
+|TestResults |
