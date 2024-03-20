@@ -1,18 +1,7 @@
-Invoke POST request
-
-Invoke-WebRequest -UseBasicParsing $(link) -ContentType "application/json" -Method POST -Body '$(json_body)'
-[Console]::ReadKey()
-
-where
-$(link) - link to web API
-$(json_body) - JSON body
-
-
-
-Invoke GET request
-Invoke-WebRequest -UseBasicParsing $(link) -Method GET
-
-
+## Find all services by name
+```powershell
+Get-Service "win*" | Format-List -Property Name, DisplayName, Status
+```
 
 
 ## Getting environment variable ASPNETCORE_ENVIRONMENT using C#
@@ -37,9 +26,3 @@ echo "ASPNETCORE Environment: $env1"
 echo "    DOTNET Environment: $env2"
 ```
 
-
-
-## Find all services by name
-```powershell
-Get-Service "win*" | Format-List -Property Name, DisplayName, Status
-```
