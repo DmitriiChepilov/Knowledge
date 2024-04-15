@@ -1,5 +1,5 @@
 
-## run Credential Manager
+## Run Credential Manager
 ```powershell
 control.exe keymgr.dll
 control.exe /name Microsoft.CredentialManager
