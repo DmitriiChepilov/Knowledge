@@ -37,3 +37,13 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+# Yarn project A.
+```bash
+# install yarn
+npm install yarn
+
+# run prebuild, build & package
+yarn run package
+```
