@@ -61,7 +61,14 @@ npm install yarn
 # run prebuild, build & package
 yarn run package
 ```
+
+### Audit
+
+[Understand your dependencies](https://deps.dev/npm/npm/10.5.2)
+
 ## Links
 
-History of npm, yarn, pnpm
+* History of npm, yarn, pnpm
 [Менеджмент зависимостей в Javascript](https://habr.com/ru/companies/gazprombank/articles/725992/)
+
+* [How to Migrate from Vue CLI to Vite](https://vueschool.io/articles/vuejs-tutorials/how-to-migrate-from-vue-cli-to-vite/)
