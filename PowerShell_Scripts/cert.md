@@ -1,3 +1,4 @@
+## List of certificates
 ```powershell
 Get-ChildItem Cert:\LocalMachine   -Recurse
 Get-ChildItem Cert:\CurrentUser\My -Recurse
