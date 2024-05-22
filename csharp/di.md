@@ -1,6 +1,6 @@
+## 1 Register Decorator
 
-## Decorator
-pattern
+### 1.1 Decorator pattern
 
 ```csharp
 public interface IUserService
@@ -16,7 +16,7 @@ public class UserService : IUserService
   {
     _repository = repository;
   }
-  
+
   public Task<User> GetById(int id)
   {
     return _repository.GetById(id);
@@ -43,6 +43,23 @@ public class StateHistoryUserServiceDecorator : IUserService
   }
 ```
 
+### 1.2 Microsoft DI
+
+```csharp
+collection.AddTransient(CreateUserService);
+//...
+private static IUserService CreateUserService(IServiceProvider provider)
+{
+  var userRepository = provider.GetRequiredService<IUserRepository>();
+  var userService = new UserService(userRepository);
+
+  var userStateHistoryService = provider.GetRequiredService<IUserStateHistoryService>();
+  return new StateHistoryUserServiceDecorator(userService, userStateHistoryService);
+}
+```
+
+### 1.3 Autofac
+
 ```csharp
 builder.RegisterType<UserService>().As<IUserService>();
 builder.RegisterDecorator<StateHistoryUserServiceDecorator, IUserService>();
@@ -50,4 +67,3 @@ var container = builder.Build();
 
 var service = container.Resolve<IUserService>();
 ```
-
