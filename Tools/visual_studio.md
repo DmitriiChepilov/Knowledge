@@ -20,3 +20,8 @@ Roslyn-based analysis for code using the Serilog logging library. Checks for com
 Stack Trace Explorer
 Parse those pesty unreadable long stack traces. Stack Trace Explorer provides syntax highlighting and easy navigation to elements in the stack trace.
 [Stack Trace Explorer 2022](https://marketplace.visualstudio.com/items?itemName=SamirBoulema.StackTraceExplorer2022)
+
+### SpecFlow for Visual Studio 2022
+
+SpecFlow bridges the communication gap between domain experts and developers by binding business readable behavior specifications and examples to the underlying implementation.
+[SpecFlow for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=TechTalkSpecFlowTeam.SpecFlowForVisualStudio2022)
