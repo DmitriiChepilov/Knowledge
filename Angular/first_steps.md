@@ -4,7 +4,7 @@
 For Angular 16.2 [here](https://nodejs.org/dist/latest-v16.x/)
 
 ### run script
-```powershell
+```sh
 npm install -g @angular/cli
 npm install
 npm install --only=dev
