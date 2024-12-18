@@ -57,3 +57,8 @@ syntax highlighting for HCL files #nomad
 
 nomfmt is a Visual Studio Code extension that integrates nomad fmt to provide on-the-fly code formatting for Nomad job spec files written in HCL (HashiCorp Configuration Language).
 [nomfmt: Nomad Formatter](https://marketplace.visualstudio.com/items?itemName=mrkaran.nomfmt)
+
+### .NET Upgrade Assistant
+
+The goal of this extension is to assist in upgrading your .NET applications to the latest versions of .NET.
+[.NET Upgrade Assistant](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.upgradeassistant)
