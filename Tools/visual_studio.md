@@ -62,3 +62,4 @@ nomfmt is a Visual Studio Code extension that integrates nomad fmt to provide on
 
 The goal of this extension is to assist in upgrading your .NET applications to the latest versions of .NET.
 [.NET Upgrade Assistant](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.upgradeassistant)
+Blog post [Upgrading your .NET projects with Visual Studio](https://devblogs.microsoft.com/dotnet/upgrade-assistant-now-in-visual-studio/)
