@@ -2,6 +2,8 @@
 
 - [TabSanity](https://marketplace.visualstudio.com/items?itemName=jedmao.TabSanity-10817)
   For VS2022 use this forked [github.com/pragmatrix/tabsanity-vs](https://github.com/pragmatrix/tabsanity-vs/releases)
+- [Text Marker (Highlighter)](https://marketplace.visualstudio.com/items?itemName=ryu1kn.text-marker)
+  Highlight/Unhighlight text
 
 ### PlantUML
 
