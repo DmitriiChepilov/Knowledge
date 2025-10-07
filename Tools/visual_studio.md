@@ -1,3 +1,17 @@
+## You want to install Visual Studio 2022 version 17.8 ?
+
+After downloading visualstudiosetup.exe go to command line and enter:
+
+```sh
+# cmd
+visualstudiosetup.exe --channelUri https://aka.ms/vs/17/release.LTSC.17.8/channel
+```
+
+```powershell
+# powershell
+.\visualstudiosetup.exe --channelUri https://aka.ms/vs/17/release.LTSC.17.8/channel
+```
+
 ## FaQ
 
 ### Fully reset all Visual Studio settings to factory defaults
