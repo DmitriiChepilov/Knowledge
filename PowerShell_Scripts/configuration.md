@@ -4,6 +4,9 @@
 control.exe keymgr.dll
 control.exe /name Microsoft.CredentialManager
 rundll32.exe keymgr.dll, KRShowKeyMgr
+
+#clean history
+Remove-Item -Path (Get-PSReadLineOption).HistorySavePath
 ```
 
 ## Cleanup
@@ -46,4 +49,10 @@ ForEach ($CacheItem in $CacheInfo) {
 ##read out cache size after clearning, 0 will not show up and should be blank
 echo "now GB"
 [math]::round((((Get-ChildItem -s "c:\windows\ccmcache" | Measure-Object -Property Length -sum | Select-Object -ExpandProperty Sum)/1024)/1024)/1024,2)
+```
+
+
+To run the System applet as a user named "Admin", you would type: 
+```sh
+runas /user:Admin "rundll32.exe shell32.dll,Control_RunDLL sysdm.cpl"
 ```

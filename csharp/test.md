@@ -6,17 +6,24 @@
 
 ## MSTest
 
-TestInitialize runs **before every test** that is declared on the the **same class** where the attribute is declared.
+`TestInitialize` runs **before every test** that is declared on the the **same class** where the attribute is declared.
 
-ClassInitialize runs **only** on the initialization of the class where the attribute is declared. In other words it won't run for every class. Just for the class that contains the ClassInitialize method.
+`ClassInitialize` runs **only** on the initialization of the class where the attribute is declared. In other words it won't run for every class. Just for the class that contains the ClassInitialize method.
 
 ```csharp
 [TestClass]
 public class MyTestClass
 {
+    [ClassInitialize]
+    public void ClassInitialize()
+    {
+        // ClassInitialize is called once by MSTest before any of the TestMethods are invoked.
+    }
+
     [TestInitialize]
     public void TestInitialize()
     {
+        // TestInitialize is called once before each test method.
     }
 
     [TestCleanup]
@@ -60,4 +67,10 @@ public class MyTestClass
     {
     }
 }
+```
+
+## Some Hints
+
+```csharp
+ILogger<MyClass> logger = NullLogger<MyClass>.Instance;
 ```
