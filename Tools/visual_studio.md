@@ -24,16 +24,42 @@ cd "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE"
 .\devenv.com /ResetUserData
 ```
 
-## Tools
+## Extensions
 
-### Rider Dark Theme For Visual Studio
+### .NET Upgrade Assistant
 
-[Rider Dark Theme For Visual Studio](https://marketplace.visualstudio.com/items?itemName=TwinTechResearch.Rider-Dark-Theme-For-Visual-Studio)
+The goal of this extension is to assist in upgrading your .NET applications to the latest versions of .NET.
+[.NET Upgrade Assistant](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.upgradeassistant)
+Blog post [Upgrading your .NET projects with Visual Studio](https://devblogs.microsoft.com/dotnet/upgrade-assistant-now-in-visual-studio/)
+
+### AsyncFixer for Visual Studio 2022
+
+AsyncFixer helps developers in finding and correcting common async/await misuses (i.e., anti-patterns).
+[AsyncFixer for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SemihOkur.AsyncFixer2022)
+
+### HashiCorp HCL
+
+syntax highlighting for HCL files #nomad
+[HashiCorp HCL](https://marketplace.visualstudio.com/items?itemName=HashiCorp.HCL)
+
+### Highlighter
+
+Highlights predefined set of keywords in comments
+[Highlighter](https://marketplace.visualstudio.com/items?itemName=AndriesDK.Highlighter)
+
+### nomfmt: Nomad Formatter
+
+nomfmt is a Visual Studio Code extension that integrates nomad fmt to provide on-the-fly code formatting for Nomad job spec files written in HCL (HashiCorp Configuration Language).
+[nomfmt: Nomad Formatter](https://marketplace.visualstudio.com/items?itemName=mrkaran.nomfmt)
 
 ### Hot Keys - Keyboard Shortcuts
 
 Brings to life all your favorite shortcuts from other editing tools.
 [Hot Keys - Keyboard Shortcuts](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
+
+### Rider Dark Theme For Visual Studio
+
+[Rider Dark Theme For Visual Studio](https://marketplace.visualstudio.com/items?itemName=TwinTechResearch.Rider-Dark-Theme-For-Visual-Studio)
 
 ### Serilog Analyzer
 
@@ -51,29 +77,11 @@ Parse those pesty unreadable long stack traces. Stack Trace Explorer provides sy
 
 SpecFlow bridges the communication gap between domain experts and developers by binding business readable behavior specifications and examples to the underlying implementation.
 [SpecFlow for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=TechTalkSpecFlowTeam.SpecFlowForVisualStudio2022)
+No Longer Available on Marketplace.
+Reqnroll is an open-source Cucumber-style BDD test automation framework for .NET. It has been created as a reboot of the SpecFlow project.
+[Reqnroll for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=Reqnroll.ReqnrollForVisualStudio2022)
 
 ### VSColorOutput64
 
 VSColorOutput can change the color of a line emitted to the output window based on specified rules.
 [VSColorOutput64](https://marketplace.visualstudio.com/items?itemName=MikeWard-AnnArbor.VSColorOutput64)
-
-### AsyncFixer for Visual Studio 2022
-
-AsyncFixer helps developers in finding and correcting common async/await misuses (i.e., anti-patterns).
-[AsyncFixer for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SemihOkur.AsyncFixer2022)
-
-### HashiCorp HCL
-
-syntax highlighting for HCL files #nomad
-[HashiCorp HCL](https://marketplace.visualstudio.com/items?itemName=HashiCorp.HCL)
-
-### nomfmt: Nomad Formatter
-
-nomfmt is a Visual Studio Code extension that integrates nomad fmt to provide on-the-fly code formatting for Nomad job spec files written in HCL (HashiCorp Configuration Language).
-[nomfmt: Nomad Formatter](https://marketplace.visualstudio.com/items?itemName=mrkaran.nomfmt)
-
-### .NET Upgrade Assistant
-
-The goal of this extension is to assist in upgrading your .NET applications to the latest versions of .NET.
-[.NET Upgrade Assistant](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.upgradeassistant)
-Blog post [Upgrading your .NET projects with Visual Studio](https://devblogs.microsoft.com/dotnet/upgrade-assistant-now-in-visual-studio/)
