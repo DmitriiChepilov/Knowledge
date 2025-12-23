@@ -16,3 +16,11 @@ public sealed class StudentMap : IEntityTypeConfiguration<Student>
     }
 }
 ```
+
+```sql
+CREATE TABLE [dbo].[Student] (
+    [ID]                INT                IDENTITY (1, 1) NOT NULL,
+    [StatusIds]         NVARCHAR (4000)    NULL,
+    CONSTRAINT [PK_Student] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+```
