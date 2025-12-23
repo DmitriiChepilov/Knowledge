@@ -1,5 +1,5 @@
-
 ## example with auto number
+
 ```plantuml
 @startuml example with auto number
 autonumber
