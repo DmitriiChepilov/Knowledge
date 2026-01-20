@@ -14,3 +14,18 @@ public enum ReportStatus
     DontKnow,
 }
 ```
+
+## Deserialize JSON file to object
+
+```csharp
+public static async Task<T> DeserializeFromFileAsync<T>(
+    IFileSystem fileSystem,
+    string fileFullPath,
+    CancellationToken cancellationToken = default)
+{
+    using (var fileStream = fileSystem.FileStream.Create(fileFullPath, FileMode.Open, FileAccess.Read))
+    {
+        return await JsonSerializer.DeserializeAsync<T>(fileStream, cancellationToken);
+    }
+}
+```
