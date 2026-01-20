@@ -152,6 +152,7 @@ builder.Services.Configure<MySettings>(
 // или
 builder.Services.Configure<MySettings>(builder.Configuration.GetRequiredSection(nameof(MySettings)));
 
+
 // Или если используете IOptions<T>
 builder.Services.AddOptions<MySettings>()
     .Bind(builder.Configuration.GetSection("MySettings"));
