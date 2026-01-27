@@ -75,3 +75,28 @@ Remove-ItemRecurse -Path "c:\Temp\path2"
 ```powershell
 (New-Object -ComObject Sapi.spvoice).speak("Hey, $(([adsi]"LDAP://$(whoami /fqdn)").givenName), your BAT file is finished!")
 ```
+
+
+## Hash
+```powershell
+function GetMd5Hash($fullPath)
+{
+    $md5 = new-object -TypeName System.Security.Cryptography.MD5CryptoServiceProvider
+    $file = [System.IO.File]::Open($fullPath, [System.IO.Filemode]::Open, [System.IO.FileAccess]::Read)
+    try {
+        return $md5.ComputeHash($file)
+    } finally {
+        $file.Dispose()
+    }
+}
+         
+function GetSha256Hash($fullPath)
+{
+    $md5 = new-object -TypeName System.Security.Cryptography.SHA256CryptoServiceProvider
+    $file = [System.IO.File]::Open($fullPath, [System.IO.Filemode]::Open, [System.IO.FileAccess]::Read)
+    try {
+        return $md5.ComputeHash($file)
+    } finally {
+        $file.Dispose()  
+}
+```
