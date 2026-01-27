@@ -3,12 +3,13 @@
 Imagine a database where articles and their tags are separated into different tables. A developer wants to return one row per each article with all associated tags. The following query achieves this result:
 
 ```SQL
-SELECT a.articleId,
-       title,
-       STRING_AGG(tag, ',') AS tags
+SELECT
+      a.articleId
+    , title
+    , STRING_AGG(tag, ',') AS tags
 FROM dbo.Article AS a
-     LEFT OUTER JOIN dbo.ArticleTag AS t
-         ON a.ArticleId = t.ArticleId
+    LEFT OUTER JOIN dbo.ArticleTag AS t
+        ON a.ArticleId = t.ArticleId
 GROUP BY a.articleId, title;
 GO
 ```
