@@ -24,3 +24,9 @@ CREATE TABLE [dbo].[Student] (
     CONSTRAINT [PK_Student] PRIMARY KEY CLUSTERED ([ID] ASC)
 );
 ```
+
+## Load collection
+
+```csharp
+await _dbContext.Entry(student).Collection(r => r.Rooms).LoadAsync(ct);
+```
