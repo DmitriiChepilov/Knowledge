@@ -30,3 +30,15 @@ CREATE TABLE [dbo].[Student] (
 ```csharp
 await _dbContext.Entry(student).Collection(r => r.Rooms).LoadAsync(ct);
 ```
+
+## Execute stored procudure
+
+```csharp
+await _dbContext.Database.ExecuteSqlRawAsync(
+    "EXEC dbo.ProcName @Param1, @Param2",
+    new SqlParameter("@Param1", value1),
+    new SqlParameter("@Param2", value2));
+// with simple type
+await _dbContext.Database.ExecuteSqlInterpolatedAsync(
+    $"EXEC dbo.ProcName @Param1 = {value1}, @Param2 = {value2}");
+```
