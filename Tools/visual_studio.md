@@ -79,7 +79,7 @@ SpecFlow bridges the communication gap between domain experts and developers by 
 [SpecFlow for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=TechTalkSpecFlowTeam.SpecFlowForVisualStudio2022)
 No Longer Available on Marketplace.
 Reqnroll is an open-source Cucumber-style BDD test automation framework for .NET. It has been created as a reboot of the SpecFlow project.
-[Reqnroll for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=Reqnroll.ReqnrollForVisualStudio2022)
+[Reqnroll for Visual Studio 2022 and 2026](https://marketplace.visualstudio.com/items?itemName=Reqnroll.ReqnrollForVisualStudio2022)
 
 ### VSColorOutput64
 
