@@ -17,6 +17,9 @@ Removes all superseded versions of every component in the component store. [Clea
 > All existing update packages can't be uninstalled after this command is completed, but this won't block the uninstallation of future update packages.
 
 ```powershell
+# Введите команду для анализа (узнать, сколько места можно спасти)
+Dism.exe /Online /Cleanup-Image /AnalyzeComponentStore
+# система напишет, что очистка рекомендуется, введите команду для удаления старых версий обновлений
 Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
 ```
 
@@ -51,8 +54,21 @@ echo "now GB"
 [math]::round((((Get-ChildItem -s "c:\windows\ccmcache" | Measure-Object -Property Length -sum | Select-Object -ExpandProperty Sum)/1024)/1024)/1024,2)
 ```
 
+To run the System applet as a user named "Admin", you would type:
 
-To run the System applet as a user named "Admin", you would type: 
 ```sh
 runas /user:Admin "rundll32.exe shell32.dll,Control_RunDLL sysdm.cpl"
+```
+
+## Compact OS
+
+Компактизация всей ОС (или функция Compact OS) — это встроенный механизм Windows, который сжимает файлы самой операционной системы (системные библиотеки, исполняемые файлы и драйверы), чтобы они занимали меньше физического места на диске
+
+```powershell
+# Проверка текущего статуса
+compact /compactos:query
+# Включение Compact OS
+compact /compactos:always
+# Как вернуть всё назад
+compact /compactos:never
 ```
