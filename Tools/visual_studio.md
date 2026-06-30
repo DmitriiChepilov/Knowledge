@@ -12,6 +12,12 @@ visualstudiosetup.exe --channelUri https://aka.ms/vs/17/release.LTSC.17.8/channe
 .\visualstudiosetup.exe --channelUri https://aka.ms/vs/17/release.LTSC.17.8/channel
 ```
 
+or install using winget
+
+```powershell
+winget install Microsoft.VisualStudio.2022.Community
+```
+
 ## FaQ
 
 ### Fully reset all Visual Studio settings to factory defaults
