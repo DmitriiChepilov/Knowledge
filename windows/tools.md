@@ -13,3 +13,15 @@ This utility is a compilation of Windows tasks I perform on each Windows system 
 
 qBittorrent is a bittorrent client
 [https://github.com/qbittorrent/qBittorrent/](https://github.com/qbittorrent/qBittorrent/)
+
+# Application from Microsoft Store
+
+## WinDirStat
+
+See where your disk space has gone with an interactive treemap visualization.
+[WinDirStat](https://apps.microsoft.com/detail/9ph1gl95p3wf?hl=en-US&gl=RU)
+
+## Microsoft PowerToys
+
+Microsoft PowerToys is a set of utilities for power users to tune and streamline their Windows 10 and 11 experience for greater productivity.
+[Microsoft PowerToys](https://apps.microsoft.com/detail/xp89dcgq3k6vld?hl=en-US&gl=RU)
