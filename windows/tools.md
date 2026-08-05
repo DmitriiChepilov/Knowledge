@@ -25,3 +25,10 @@ See where your disk space has gone with an interactive treemap visualization.
 
 Microsoft PowerToys is a set of utilities for power users to tune and streamline their Windows 10 and 11 experience for greater productivity.
 [Microsoft PowerToys](https://apps.microsoft.com/detail/xp89dcgq3k6vld?hl=en-US&gl=RU)
+
+# Optional tools
+
+## Glow
+
+Glow is an advanced system analysis software.
+[Glow](https://github.com/turkaysoft/glow/releases)
