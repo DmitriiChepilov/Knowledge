@@ -25,6 +25,7 @@ Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
 # dedik
 Dism.exe /Online /Cleanup-Image /RestoreHealth
 Dism.exe /Online /Cleanup-Image /StartComponentCleanup /ResetBase
+[System.Console]::Beep(800, 200)
 ```
 
 Cleaning C:\Windows\ccmcache folder. [FIX: CCMCache folder grows exponentially](https://www.reddit.com/r/SCCM/comments/16copla/fix_ccmcache_folder_grows_exponentially/)
