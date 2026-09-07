@@ -267,3 +267,8 @@ private static IUserProvider CreateUserProviderProduction(IServiceProvider provi
     return new CachedUserProviderDecorator(databaseUserProviderDecorator, memoryCache);
 }
 ```
+
+## Проверка дерева в котейнера зависимостей
+
+```csharp
+```
