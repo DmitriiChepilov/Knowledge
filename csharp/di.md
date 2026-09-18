@@ -271,4 +271,15 @@ private static IUserProvider CreateUserProviderProduction(IServiceProvider provi
 ## Проверка дерева в котейнера зависимостей
 
 ```csharp
+var builder = Host.CreateDefaultBuilder(args);
+
+// Включаем валидацию контейнера
+builder.UseDefaultServiceProvider(options =>
+{
+    options.ValidateScopes = true;   // Проверяет, чтобы Scoped-сервисы не внедрялись в Singleton
+    options.ValidateOnBuild = true;  // Проверяет возможность создания всех зарегистрированных сервисов при старте
+});
+
+using IHost host = builder.Build();
+await host.RunAsync();
 ```
