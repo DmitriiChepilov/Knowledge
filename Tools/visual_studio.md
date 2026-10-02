@@ -1,3 +1,25 @@
+## Downlaod
+- On PC with internet:
+Download the Visual Studio installer: https://visualstudio.microsoft.com/downloads/ or [here](https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-history#release-dates-and-build-numbers)
+Open an admin console
+```powershell
+.\vs_professional.exe --layout "C:\VS2026Offline" `
+  --add Microsoft.VisualStudio.Workload.NetWeb `
+  --add Microsoft.VisualStudio.Workload.ManagedDesktop `
+  --add Microsoft.VisualStudio.Workload.NativeDesktop `
+  --add Microsoft.NetCore.Component.Runtime.9.0 `
+  --includeRecommended `
+  --lang en-US
+```
+        
+- On offline PC:
+
+Open an admin console
+
+```powershell
+.\vs_professional.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended
+```
+
 ## You want to install Visual Studio 2022 version 17.8 ?
 
 After downloading visualstudiosetup.exe go to command line and enter:

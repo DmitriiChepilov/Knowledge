@@ -3,9 +3,11 @@
 ```csharp
 class User{
   public User(
+    IReadOnlyList<Order> orders,
     string userName,
     int levelId)
   {
+    ArgumentNullException.ThrowIfNull(orders);
     ArgumentException.ThrowIfNullOrEmpty(userName);
     ArgumentOutOfRangeException.ThrowIfNegativeOrZero(levelId);
 
